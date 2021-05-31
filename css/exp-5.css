@@ -2,7 +2,20 @@ html{
     background-color: lightseagreen;
     border-radius: 5px;
     border-color: maroon;
-    width: 70%;
 }
 
-bodydiv <
+body p{
+    margin:5rem;
+    padding:3rem;
+    background-color: mediumspringgreen;
+    font-size: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 10px 80px;
+    border: 20px solid midnightblue;
+}
+
+body p abbr{
+    border-bottom: none;
+    text-decoration: 4px solid rgb(90, 6, 226)
+}
