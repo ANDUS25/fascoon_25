@@ -1,0 +1,18 @@
+/* this is element selectors */
+html{
+    background-color: mediumaquamarine;
+}
+
+/* this is class selectors */
+.header{
+    font-size: 50px ;
+}
+
+.header .abbr{
+}
+
+/* this is Id selectors */
+#table{
+    list-style-type:circle;
+    padding-left: 17rem;
+}
