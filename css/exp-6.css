@@ -3,10 +3,12 @@ html{
     background-color: mediumaquamarine;
 }
 
+
 /* this is class selectors */
 .header{
     font-size: 50px ;
 }
+
 
 /* this is Id selectors */
 #table{
