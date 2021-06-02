@@ -8,9 +8,6 @@ html{
     font-size: 50px ;
 }
 
-.header .abbr{
-}
-
 /* this is Id selectors */
 #table{
     list-style-type:circle;
