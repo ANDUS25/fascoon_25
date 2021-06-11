@@ -1,0 +1,10 @@
+html{
+    background-color: lightskyblue;
+}
+
+.h1{
+    border-width:25px ;
+    border-style: groove;
+    border-color: red;
+    padding-left:200px;
+}
