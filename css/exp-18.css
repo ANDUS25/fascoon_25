@@ -1,0 +1,15 @@
+html{
+    background-color: lightskyblue;
+}
+
+form input[type=text]:hover{
+    color:white ;
+    background-color:black ;
+    font-size: 30px;
+    width: 50%;
+}
+
+input[type=submit]:hover{
+    background-color: blue;
+    color: coral;
+}
