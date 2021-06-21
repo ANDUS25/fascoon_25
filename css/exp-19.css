@@ -1,0 +1,20 @@
+table, tr, th, td{
+    border: 3px solid red;
+    border-collapse: collapse;
+    padding: 15px;
+}
+
+table tr th{
+    font-size: 25px;
+    text-decoration: underline purple;
+
+}
+
+table tr td{
+    text-align: center;
+}
+
+table tr td:hover{
+    font-size: 50px ;
+    background-color: lightgreen;
+}
