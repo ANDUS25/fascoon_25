@@ -1,0 +1,20 @@
+html{
+    background-color: lightseagreen;
+}
+
+main{
+    font-size: 20px;
+}
+
+main h1 abbr{
+    text-decoration: none;
+}
+
+main h1{
+    color: lime;
+    text-align: center;
+    text-decoration-line: underline;
+    text-decoration-color: red;
+    text-decoration-style: wavy;
+    text-transform: uppercase;
+}
