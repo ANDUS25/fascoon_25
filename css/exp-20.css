@@ -1,0 +1,30 @@
+html{
+    background-color: cadetblue;
+}
+
+main ul li{
+    padding:130px;
+    display: inline;
+}
+main ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+main ul li a:hover{
+    color: red;
+}
+
+main ul li a:visited{
+    color: cyan;
+}
+img{
+    width:50%;
+    display: block;
+    margin-left:280px
+}
+
+main p{
+    display: block;
+    padding: 20px;
+}
