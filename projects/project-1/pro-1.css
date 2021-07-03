@@ -1,0 +1,47 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-image: url("arc-2.jpeg");
+  background-repeat: no-repeat;
+  background-position: 50% 25vh;
+  /* 50% 50% also work*/
+  background-origin: content-box;
+  background-color: lightseagreen;
+}
+
+header {
+  font-size: 1.2rem;
+  float: right;
+  padding-right: 55.62rem;
+  background-color: black;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: capitalize;
+  list-style-type: none;
+  color: red;
+  text-decoration: none;
+  /* overline work here */
+}
+
+header ul:hover {
+  color: white;
+}
+
+header li {
+  word-spacing: 20px;
+  padding: 10px .8rem;
+}
+/*# sourceMappingURL=pro-1.css.map */
