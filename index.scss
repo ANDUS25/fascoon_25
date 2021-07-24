@@ -1,0 +1,19 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+img{
+    height: 98vh;
+    width: 98vw;
+}
+.links{
+    display: flex;
+    justify-content: center;
+    h1{
+        top:20px;
+        position: absolute;
+        font-size: 50px;
+        color: rgb(17, 174, 226);
+        text-transform: uppercase;
+    }
+}

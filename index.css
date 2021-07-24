@@ -1,0 +1,27 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+img {
+  height: 98vh;
+  width: 98vw;
+}
+
+.links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.links h1 {
+  top: 20px;
+  position: absolute;
+  font-size: 50px;
+  color: #11aee2;
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=index.css.map */
