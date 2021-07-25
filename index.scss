@@ -7,6 +7,29 @@ $links_h1:rgb(17, 174, 226);
 img{
     height: 99.6vh;
     width: 99.5vw;
+    
+}
+.button{
+    position: absolute;
+    margin:37rem 0;
+    a{
+        text-decoration: none;
+        font-size: 30px;
+        padding:  20px ;
+        border:3px solid gold;
+        border-radius: 50px;
+        background-color: firebrick;
+        color:white;
+    }
+    .html{
+        margin-left:11rem;
+    }
+    .css{
+        margin-left: 22rem
+    }
+    .java{
+        margin-left: 19rem;
+    }
 }
 .links{
     display: flex;
@@ -17,21 +40,5 @@ img{
         font-size: 50px;
         color: $links_h1;
         text-transform: uppercase;
-    }
-}
-
-@media screen and (max-width:480px){
-    .main{
-        img{
-            width:100vw;
-        }
-
-        .links{
-            h1{
-
-                font-size: 25px;
-                color:$links_h1
-            }
-        }
     }
 }
