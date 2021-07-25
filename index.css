@@ -24,4 +24,14 @@ img {
   color: #11aee2;
   text-transform: uppercase;
 }
+
+@media screen and (max-width: 480px) {
+  .main img {
+    width: 100vw;
+  }
+  .main .links h1 {
+    font-size: 25px;
+    color: #11aee2;
+  }
+}
 /*# sourceMappingURL=index.css.map */
