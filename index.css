@@ -5,7 +5,7 @@
 
 img {
   height: 99.6vh;
-  width: 99.5vw;
+  width: 100%;
 }
 
 .button {
@@ -50,5 +50,18 @@ img {
   font-size: 50px;
   color: #11aee2;
   text-transform: uppercase;
+}
+
+.advance_js a {
+  text-decoration: none;
+  font-size: 30px;
+  padding: 20px;
+  border: 3px solid gold;
+  border-radius: 50px;
+  background-color: firebrick;
+  color: white;
+  position: relative;
+  top: 2rem;
+  right: -3em;
 }
 /*# sourceMappingURL=index.css.map */
