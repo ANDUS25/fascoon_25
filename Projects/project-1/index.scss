@@ -3,56 +3,36 @@
     margin:0;
     box-sizing: border-box;
 }
-@mixin for-all-dots{
-    background-color: black;
-    height: 30%;
-    border-radius: 50%;
-}
-@mixin for-2-3-dot{
-    // margin-left:4px;
-    position: relative;
-}
-
-.menu-bar{
-    display: flex;
-    height:10vh;
-    box-shadow: 0 3px 5px gray ;
-    padding:2rem;
-    .left-side{
-        .logo{
-            display: flex;
-            .dots{
-                display: flex;
-                // justify-self: flex-start;
-                padding: 5px;
-                .dot1{
-                    @include for-all-dots;
-                }
-
-                .dot2{
-                    @include for-all-dots;
-                    @include for-2-3-dot;
-                }
-
-                .dot3{
-                    @include for-all-dots;
-                    @include for-2-3-dot;
+header{
+    width:100%;
+    .menu-bar{
+        display: flex;
+        justify-content: space-between;
+        box-shadow: 0 3px 5px gray ;
+        padding:1.5rem;
+        .main-logo{
+            a{
+                text-decoration: none;
+                font-size: 2rem;
+                color: black;
+            }
+        }
+        .right-side{
+            align-self: center;
+            li{
+                list-style: none;
+                a{
+                    text-decoration: none;
+                    padding:0 15px;
                 }
             }
         }
     }
-
-    .right-side{
-        display: flex;
-        flex-direction: row;
-        align-self: center;
-        justify-self: center;
-    }
 }
 
 .content{
-   display: grid;
-   grid-template-columns: 90% 10%;
+    display: grid;
+    grid-template-columns: 90% 10%;
     width:60%;
     .left-content{
         .list:hover{
@@ -61,17 +41,17 @@
     }
     .right{
         width:45vw;
-
         .right-1{
             margin:5em;
             ul{
                 margin: 40px 10px;
-                a{
-                    position: relative;
-                    text-decoration: none;
-                    background-color: lightblue;
-                    padding:5px;
-                    
+                li{
+                    list-style: none;
+                    a{
+                        text-decoration: none;
+                        background-color: lightblue;
+                        padding:5px;
+                    }
                 }
             }
         }

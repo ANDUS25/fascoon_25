@@ -5,60 +5,41 @@
           box-sizing: border-box;
 }
 
-.menu-bar {
+header {
+  width: 100%;
+}
+
+header .menu-bar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 10vh;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-shadow: 0 3px 5px gray;
           box-shadow: 0 3px 5px gray;
-  padding: 2rem;
+  padding: 1.5rem;
 }
 
-.menu-bar .left-side .logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+header .menu-bar .main-logo a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: black;
 }
 
-.menu-bar .left-side .logo .dots {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 5px;
-}
-
-.menu-bar .left-side .logo .dots .dot1 {
-  background-color: black;
-  height: 30%;
-  border-radius: 50%;
-}
-
-.menu-bar .left-side .logo .dots .dot2 {
-  background-color: black;
-  height: 30%;
-  border-radius: 50%;
-  position: relative;
-}
-
-.menu-bar .left-side .logo .dots .dot3 {
-  background-color: black;
-  height: 30%;
-  border-radius: 50%;
-  position: relative;
-}
-
-.menu-bar .right-side {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+header .menu-bar .right-side {
   -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
       align-self: center;
-  justify-self: center;
+}
+
+header .menu-bar .right-side li {
+  list-style: none;
+}
+
+header .menu-bar .right-side li a {
+  text-decoration: none;
+  padding: 0 15px;
 }
 
 .content {
@@ -85,8 +66,11 @@
   margin: 40px 10px;
 }
 
-.content .right .right-1 ul a {
-  position: relative;
+.content .right .right-1 ul li {
+  list-style: none;
+}
+
+.content .right .right-1 ul li a {
   text-decoration: none;
   background-color: lightblue;
   padding: 5px;
