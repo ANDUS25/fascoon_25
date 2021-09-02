@@ -16,7 +16,6 @@ var info = {
     "age":23,
     "language":"JSON"
 }
-
 console.log("My name is " +"'"+ info.fname +"'"+ " and I'm learning "+"'"+ info.language+"'." );
 
 // This is a JSON array //
@@ -27,4 +26,6 @@ var ME=[
     {"fname":"GHI","lname":"RST", "age":"Infinte", "country":"INDIA"}
 ]
 
-console.log();
+ME.forEach(function(ME){
+    console.log("My name is " + ME.fname+ " and my last name is " + ME.lname);
+})
