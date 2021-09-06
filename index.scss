@@ -56,3 +56,18 @@ img{
        right:-3em
     }
 }
+
+.TODO-list{
+    margin-left:39em;
+    a{
+        @include for_anchor_tag()
+    }
+}
+
+.res-web{
+    // display: inline;
+    margin: -2.5em 0 0 65em;
+    a{
+        @include for_anchor_tag;
+    }
+}
