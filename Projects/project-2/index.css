@@ -1,0 +1,76 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: lightgreen;
+}
+
+body .input_container {
+  margin: 4em 2em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 2em;
+}
+
+body .input_container label {
+  text-transform: uppercase;
+}
+
+body .input_container .input {
+  border-radius: 20px 10px;
+  border: none;
+  padding: 10px 5px;
+  outline: none;
+  caret-color: red;
+  font-size: 20px;
+}
+
+body .input_container .addButton {
+  padding: 10px;
+  background-color: lightseagreen;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 10px 5px;
+  cursor: pointer;
+  margin: 0 2em;
+}
+
+body .data_container .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 4em 2em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 2em;
+}
+
+body .data_container .item label {
+  text-transform: uppercase;
+}
+
+body .data_container .item .inputs {
+  border-radius: 20px 10px;
+  border: none;
+  padding: 10px 5px;
+  outline: none;
+  caret-color: red;
+  font-size: 20px;
+}
+
+body .data_container .item .button {
+  padding: 10px;
+  background-color: lightseagreen;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 10px 5px;
+  cursor: pointer;
+  margin: 0 2em;
+}
+/*# sourceMappingURL=index.css.map */
