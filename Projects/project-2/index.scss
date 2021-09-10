@@ -9,10 +9,9 @@
 }
 
 @mixin for-main-div{
-    margin: 4em 2em;
-    // display: flex;
+    margin: 0 4em;
     align-items: center;
-    padding:20px 2em;
+    padding:20px;
 }
 
 @mixin for-input-field{
@@ -51,17 +50,18 @@ body{
     }
 
     .data_container{
+        margin: 1.3em 12.5em;
         .item{
             display: flex;
             
             @include for-main-div;
-            label{
-                @include for-label;
-            }
-            .inputs{
+            // label{
+            //     @include for-label;
+            // }
+            .item_input{
                 @include for-input-field;
             }
-            .button{
+            .item{
                 @include for-buttons;
             }
         }

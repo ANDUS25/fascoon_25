@@ -1,4 +1,4 @@
-const addButton =  document.querySelector(".addButton")
+const addButton = document.querySelector(".addButton")
 var input = document.querySelector(".input")
 const container = document.querySelector(".data_container")
 
@@ -13,6 +13,7 @@ class item {
         let input = document.createElement("input")
         input.value = itemName;
         input.disabled = true;
+        // placeholder.disabled = true;
         input.classList.add("item_input")
         input.type="text"
         // input.style.fontSize = "25px"
@@ -23,19 +24,19 @@ class item {
         let itemBox = document.createElement("div")
         itemBox.classList.add("item")
 
-        let label = document.createElement("p")
-        label.document.write = "You have added this content :- "
+        // let label = document.createElement("p")
+        // label.document.write = "You have added this content :- "
 
         let editButton = document.createElement("button")
         editButton.innerHTML = "EDIT"
         editButton.classList.add("editButton")
 
-        let removeButton= document.createElement("button")
+        let removeButton = document.createElement("button")
         removeButton.innerHTML = "REMOVE"
-        removeButton.classList.add("removeButton")
+        removeButton.classList.remove("removeButton")
 
         container.appendChild(itemBox);
-        itemBox.appendChild(p);
+        // itemBox.appendChild(p);
         itemBox.appendChild(input);
         itemBox.appendChild(editButton);
         itemBox.appendChild(removeButton);
@@ -45,24 +46,24 @@ class item {
         })
 
         removeButton.addEventListener("click",()=>{
-            this.remove(input)
+            this.remove(itemBox)
         })
     }
 
-    edit(){
-        item.disabled = !item.disabled
+    edit(input){
+        input.disabled = !input.disabled;
     }
 
-    remove(){
-        container.removeChild(item)
+    remove(item){
+        container.removeChild(item);
     }
 }
 
 function check(){
-    if(input.value != ' ')
+    if(input.value !=  ' ')
     {
         new item(input.value);
-        input.value = ' ';
+        input.value = " " ;
     }
 }
 
