@@ -1,0 +1,37 @@
+React js is a javascript library. (like jQuery)
+
+In Reactjs we write code in "jsx" file ...& it is ombunation of html and javascript code. 
+
+In React everyting is in the "components.
+
+There is 2 type's of components 1. statefull components.
+                                it has class "class-name" extends components{} and render(){ return () }
+
+                                import React,{Components} from 'react'
+                                export default class "app-name" extends Components{
+                                    render(){
+                                        return{
+                                            <h1> hello world !</h1>
+                                        }
+                                    }
+                                }
+
+                                2. stateless components.
+                                It has functions "app-name" and it does not have render function
+
+                                import React from 'react'
+                                export default functions "app-name"
+
+                                import React, {Components} from 'react'
+                                export default function "app-name"(){
+                                    return {
+                                        <h1>hello world! </h1>
+                                    }
+                
+How to create react app
+
+to create new app ---->> npx crate-react-app --->> app-name npx create-react-app basic 
+change to app folder ---->> cd app-name --->> cd basic
+Run the app ---->> npm start --->> npm start
+
+
