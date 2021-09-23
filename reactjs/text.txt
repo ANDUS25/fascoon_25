@@ -34,4 +34,9 @@ to create new app ---->> npx crate-react-app --->> app-name npx create-react-app
 change to app folder ---->> cd app-name --->> cd basic
 Run the app ---->> npm start --->> npm start
 
+react Routing:- This nothing but shifting from one page to another page
+                it has 3 react routing packages:- 1. react-router ( for application desktop and web browser)
+                                                  2. react-router-dom ( for application desktop and web browser)
+                                                  3. react-router-native (for andorid and IOS )
 
+react-router and react-router-dom is best for website
