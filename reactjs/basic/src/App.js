@@ -6,9 +6,13 @@ import AppBody from './components/AppBody';
 import AppFooter from './components/AppFooter/Index';
 
 function App() {
+  const  user={
+    "name":"Andy",
+    "location":"Pune"
+  }
   return (
     <div className="App">
-      <AppHeader/>
+      <AppHeader name={user.name} location={user.location}/>
       <AppBody/>
       <AppFooter/>
     </div>

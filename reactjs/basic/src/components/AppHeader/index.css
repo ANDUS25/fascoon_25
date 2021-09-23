@@ -1,0 +1,9 @@
+.header{
+    text-transform: capitalize;
+    color: rgb(117, 22, 22);
+}
+
+.header .main-header{
+    font-size: 3em;
+}
+
