@@ -1,11 +1,10 @@
 import './App.css';
 import React from 'react';
-import { Route, Switch} from 'react-router-dom'
+import { Route} from 'react-router-dom'
 import App from './App';
 import about from './components/about';
 import contact from './components/contact';
 import gallery from './components/gallery';
-import Navigation from './components/navi';
 
 
 function Router() {
