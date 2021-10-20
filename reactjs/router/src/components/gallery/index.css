@@ -1,0 +1,28 @@
+div {
+  background-color: #0dda0d;
+}
+
+div .img {
+  margin: 0 5em;
+}
+
+div .img .divs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+div .img .divs p {
+  text-align: center;
+}
+
+div .img .div-2, div .img .div-4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,27 @@
+*{
+    padding:0;
+    margin:0 ;
+}
+div{
+    background-color: lightgrey;
+    margin:3em;
+    text-align: center;
+}
+
+div li{
+    display:  flex;
+    padding:1em 3em;
+    display: inline;
+    background-color: lightgreen;
+}
+
+div li .link{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+div li .link:hover{
+    background-color: lime;
+    color: black;
+}

@@ -1,5 +1,21 @@
 div{
-    background-color:rgb(13, 218, 13)
+    background-color:rgb(13, 218, 13);
 
+    .img{
+        // display:grid;
+        // grid-template-columns: 40% 40%;
+        margin:0 5em;
+
+        .divs{
+            display: flex;
+            p{
+                text-align: center;
+            }
+        }
+        .div-2, .div-4{
+            display: flex;
+            flex-direction: row-reverse;
+        }
+    }
 }
 

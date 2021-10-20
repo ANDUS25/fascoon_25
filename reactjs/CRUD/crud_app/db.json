@@ -1,0 +1,24 @@
+{
+    "users":[
+        {
+          "id":1,
+          "name":"anand"
+        },
+        {
+          "id":2,
+          "name":"Rushikesh"
+        },
+        {
+          "id":3,
+          "name":"Zahid"
+        },
+        {
+          "id":4,
+          "name":"sukesh"
+        },
+        {
+          "id":5,
+          "name":"Viraj"
+        }
+    ]
+}

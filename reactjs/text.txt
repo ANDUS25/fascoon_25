@@ -40,3 +40,5 @@ react Routing:- This nothing but shifting from one page to another page
                                                   3. react-router-native (for andorid and IOS )
 
 react-router and react-router-dom is best for website
+
+to create seperate json server on 3001 port --->> json-server --watch db.json --port 3001

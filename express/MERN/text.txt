@@ -1,0 +1,41 @@
+Routing in experss ---> 1. Static
+                        2. Dynamic
+                        3. controller
+
+1. npm init --y ---> To create new it create file "package.json"
+
+
+                        
+in package.json(
+    {
+        // package name
+        "name": "express_installing",
+        "version": "1.0.0",
+        "description": "",
+
+        //our main file name
+        "main": "server.js",
+        "scripts": {
+          "test": "echo \"Error: no test specified\" && exit 1",
+
+          //when we type npm start this file will automatically run but we've to add this externally
+          "start": "node server.js"
+        },
+        "keywords": [],
+        "author": "",
+        "license": "ISC"
+    }
+)
+
+2. install express -->> npm install express
+
+3. npm install nodemon --save-dev--> use only local dependencie not for production
+   nodemon---> refresh server eveythime when we create small changes
+
+4. npm run dev ---->> server start through nodemon
+
+5.Go on brower type "localhost:5000" (5000 is port number)
+    our site is ready
+
+
+
