@@ -5,7 +5,6 @@ Routing in experss ---> 1. Static
 1. npm init --y ---> To create new it create file "package.json"
 
 
-                        
 in package.json(
     {
         // package name
@@ -29,7 +28,7 @@ in package.json(
 
 2. install express -->> npm install express
 
-3. npm install nodemon --save-dev--> use only local dependencie not for production
+3. npm install nodemon --save-dev --> use only local dependencie not for production
    nodemon---> refresh server eveythime when we create small changes
 
 4. npm run dev ---->> server start through nodemon
