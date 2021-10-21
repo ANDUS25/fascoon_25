@@ -1,10 +1,9 @@
-$links_h1:rgb(17, 174, 226);
-
 *{
     padding: 0px;
     margin: 0px;
 }
 
+// -------------------------------------== mixin fuunctions==------------------------------------------------
 @mixin for_anchor_tag{
     text-decoration: none;
     font-size: 30px;
@@ -16,58 +15,129 @@ $links_h1:rgb(17, 174, 226);
 }
 
 
-img{
-    height: 99.6vh;
-    width: 100%;
-}
-.button{
-    position: absolute;
-    margin:37rem 0;
-    a{
-       @include for_anchor_tag;
+// --------------------------------------------== main code ==------------------------------------------------
+.main{
+    img{
+        height: 100%;
+        width: 100%;
     }
-    .html{
-        margin-left:11rem;
+
+    .button{
+        .base-one{
+            position: relative;
+            top:-8em;
+            display: flex;
+            justify-content: space-around;
+        }
+        .base-two{
+            display: flex;
+            justify-content: space-around;
+            // font-size: 4em;
+        }
+        .base-three{
+            @extend .base-two;
+            margin:2em 0;
+        }
+        a{
+            position: relative;
+           @include for_anchor_tag;
+        }
     }
-    .css{
-        margin-left: 22rem
-    }
-    .java{
-        margin-left: 19rem;
-    }
-}
-.links{
-    display: flex;
-    justify-content: center;
-    h1{
-        top:20px;
-        position: absolute;
-        font-size: 50px;
-        color: $links_h1;
-        text-transform: uppercase;
+
+    .links{
+        display: flex;
+        justify-content: center;
+        h1{
+            top:20px;
+            position: absolute;
+            font-size: 50px;
+            color: rgb(17, 174, 226);
+            text-transform: capitalize;
+        }
     }
 }
 
-.advance_js{
-    a{
-       @include for_anchor_tag;
-       position: relative;
-       top:2rem;
-       right:-3em
+
+//--------------------------== media qurie start from here ==-----------------------------------------------
+@media(min-width:1025px) and (max-width:2560px) {
+    body{
+        width: 70vw;
+        margin:0 auto;
+        .main{
+            .links{
+                h1{
+                    font-size: 3vw;;
+                }
+            }
+            .button{
+                .base-one, .base-two, .base-three{
+                    a{
+                        width: 100%;
+                        margin:2em 3.5em;
+                    }
+                }
+                .base-two, .base-three{
+                    a{
+                        white-space: normal;
+                    }
+
+                }
+            }
+        }
     }
 }
 
-.TODO-list{
-    margin-left:39em;
-    a{
-        @include for_anchor_tag()
+@media(min-width:768px) and (min-width:1024px) {
+    .main{
+        .links{
+            h1{
+                font-size: 2em;;
+            }
+        }
+        .button{
+            position: relative;
+            .base-two, .base-three{
+                position: relative;
+                top:-6em;
+            }
+            .base-one, .base-two, .base-three{
+                a{
+                    font-size: 1.2em;
+                    margin:1em 1.5em;
+                    text-align: center;
+                }
+            }
+        }
     }
 }
 
-.res-web{
-    // display: inline;
-    margin: -2.5em 0 0 65em;
-    a{
-        @include for_anchor_tag;
+@media(min-width:0) and (max-width:767px) {
+    .main{
+        .links{
+            h1{
+                font-size: 2em;;
+            }
+        }
+        img{
+            display: none;
+        }
+        .button{
+            position: relative;
+            top:7em;
+            .base-two, .base-three{
+                position: relative;
+                top:5em;
+            }
+            .base-one, .base-two, .base-three{
+                display: flex;
+                flex-direction: column;
+                top:3em;
+                a{
+                    font-size: 1.2em;
+                    margin:1em 1.5em;
+                    text-align: center;
+                }
+            }
+        }
     }
 }

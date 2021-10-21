@@ -3,17 +3,35 @@
   margin: 0px;
 }
 
-img {
-  height: 99.6vh;
+.main img {
+  height: 100%;
   width: 100%;
 }
 
-.button {
-  position: absolute;
-  margin: 37rem 0;
+.main .button .base-one {
+  position: relative;
+  top: -8em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-.button a {
+.main .button .base-two, .main .button .base-three {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.main .button .base-three {
+  margin: 2em 0;
+}
+
+.main .button a {
+  position: relative;
   text-decoration: none;
   font-size: 30px;
   padding: 20px;
@@ -23,19 +41,7 @@ img {
   color: white;
 }
 
-.button .html {
-  margin-left: 11rem;
-}
-
-.button .css {
-  margin-left: 22rem;
-}
-
-.button .java {
-  margin-left: 19rem;
-}
-
-.links {
+.main .links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -44,52 +50,78 @@ img {
           justify-content: center;
 }
 
-.links h1 {
+.main .links h1 {
   top: 20px;
   position: absolute;
   font-size: 50px;
   color: #11aee2;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
-.advance_js a {
-  text-decoration: none;
-  font-size: 30px;
-  padding: 20px;
-  border: 3px solid gold;
-  border-radius: 50px;
-  background-color: firebrick;
-  color: white;
-  position: relative;
-  top: 2rem;
-  right: -3em;
+@media (min-width: 1025px) and (max-width: 2560px) {
+  body {
+    width: 70vw;
+    margin: 0 auto;
+  }
+  body .main .links h1 {
+    font-size: 3vw;
+  }
+  body .main .button .base-one a, body .main .button .base-two a, body .main .button .base-three a, body .main .button .base-three a {
+    width: 100%;
+    margin: 2em 3.5em;
+  }
+  body .main .button .base-two a, body .main .button .base-three a, body .main .button .base-three a {
+    white-space: normal;
+  }
 }
 
-.TODO-list {
-  margin-left: 39em;
+@media (min-width: 768px) and (min-width: 1024px) {
+  .main .links h1 {
+    font-size: 2em;
+  }
+  .main .button {
+    position: relative;
+  }
+  .main .button .base-two, .main .button .base-three, .main .button .base-three {
+    position: relative;
+    top: -6em;
+  }
+  .main .button .base-one a, .main .button .base-two a, .main .button .base-three a, .main .button .base-three a {
+    font-size: 1.2em;
+    margin: 1em 1.5em;
+    text-align: center;
+  }
 }
 
-.TODO-list a {
-  text-decoration: none;
-  font-size: 30px;
-  padding: 20px;
-  border: 3px solid gold;
-  border-radius: 50px;
-  background-color: firebrick;
-  color: white;
-}
-
-.res-web {
-  margin: -2.5em 0 0 65em;
-}
-
-.res-web a {
-  text-decoration: none;
-  font-size: 30px;
-  padding: 20px;
-  border: 3px solid gold;
-  border-radius: 50px;
-  background-color: firebrick;
-  color: white;
+@media (min-width: 0) and (max-width: 767px) {
+  .main .links h1 {
+    font-size: 2em;
+  }
+  .main img {
+    display: none;
+  }
+  .main .button {
+    position: relative;
+    top: 7em;
+  }
+  .main .button .base-two, .main .button .base-three, .main .button .base-three {
+    position: relative;
+    top: 5em;
+  }
+  .main .button .base-one, .main .button .base-two, .main .button .base-three, .main .button .base-three {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    top: 3em;
+  }
+  .main .button .base-one a, .main .button .base-two a, .main .button .base-three a, .main .button .base-three a {
+    font-size: 1.2em;
+    margin: 1em 1.5em;
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=index.css.map */
