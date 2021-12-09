@@ -3,7 +3,7 @@ const app = express()
 
 // home page
 app.get("/",(req,res) => {
-    res.send('welcome to express')
+    res.send('<h1>Welcome to Express Server</h1>')
 })
 
 // static routs
@@ -28,12 +28,12 @@ app.get("/products", controller.products)
 const PORT = 5000;
 
 app.listen(PORT, ()=>{
-    console.log(`Server started at $(PORT)`);
+    console.log(`Server started at port ${PORT}`);
 })
 
 // for page not found /404 page not found
 app.use(function(req, res, next) {
     // both'll work
-    res.send('page not found')
+    res.send('<h1> Sorry Your enterd routes is not found !!!</h1>')
     res.status(404).send('page not found')
 })

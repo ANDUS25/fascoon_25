@@ -151,6 +151,7 @@ header .menu-bar .right-side li a span {
 .flex .right-content .sticky-div .right button {
   border-radius: 50px;
   border: 2px solid gray;
+  padding: 0.2em 1em;
 }
 
 .flex .right-content .sticky-div .right button .span {
@@ -251,7 +252,7 @@ header .menu-bar .right-side li a span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 5em   0;
+  margin: 5em 0;
 }
 
 .flex .right-content .sticky-div footer ul li {

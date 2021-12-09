@@ -39,6 +39,16 @@
   border-radius: 50px;
   background-color: firebrick;
   color: white;
+  -webkit-transition: all .4s linear .2s;
+  transition: all .4s linear .2s;
+  color: #f1e7e7;
+}
+
+.main .button a:hover {
+  background-color: #585353;
+  color: white;
+  -webkit-box-shadow: 2px 10px 30px green;
+          box-shadow: 2px 10px 30px green;
 }
 
 .main .links {
