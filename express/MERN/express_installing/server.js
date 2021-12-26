@@ -21,8 +21,17 @@ app.get("/user/:id", (_req, res)=>{
 })
 
 // using controller
-const controller = require("./profile")
+// Controller-1
+// controller path
+const controller = require("./Controller/controller")
+// exact path
 app.get("/products", controller.products)
+
+// Controller-2
+const controller2 = require("./Controller/profile")
+app.get("/profile", controller2.profile)
+
+
 
 // server fix port
 const PORT = 5000;

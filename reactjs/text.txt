@@ -1,8 +1,8 @@
 React js is a javascript library. (like jQuery)
 
-In Reactjs we write code in "jsx" file ...& it is ombunation of html and javascript code. 
+In Reactjs we write code in "jsx" file ...& it is combination of html and javascript code. 
 
-In React everyting is in the "components.
+In React everyting is in the "components".
 
 There is 2 type's of components 1. statefull components.
                                 it has class "class-name" extends components{} and render(){ return () }
@@ -42,3 +42,18 @@ react Routing:- This nothing but shifting from one page to another page
 react-router and react-router-dom is best for website
 
 to create seperate json server on 3001 port --->> json-server --watch db.json --port 3001
+
+
+
+-------------------------------------------------------- React Info ----------------------------------------------------------------
+import React from "react" --> this is must thing , otherwise our app won't work.
+
+import ReactDOM from "Rect-dom"--> react.Fragment Come under this.
+ 
+Everything we written in react it should be in "react.Fragment(<> </>)"
+
+If we want to use javascript in react then use "{}" bracecs.
+
+In react instead of "class" we've to use "className" because class is a reserved word. 
+
+In React instead of "anchor tag" we've to write "NavLink" & Instead of "href" we've to write "to" for path/file direction. 
